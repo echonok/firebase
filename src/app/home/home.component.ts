@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../model/course';
 import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'home',
@@ -18,7 +16,7 @@ export class HomeComponent implements OnInit {
   advancedCourses$: Observable<Course[]>;
 
   constructor(
-    private router: Router) {
+  ) {
 
   }
 
